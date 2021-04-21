@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/patientlist.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <section id=list>
+        <div class="container">
+            <div class="head">
+                <p class="pm">PM<span>X</span></p>
+                <p class="home">Homepage</p>
+            </div>
+
+            <div class="patlist">
+                <p>Patient List</p>
+            </div>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Address</th>
+                        <th scope="col"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in patientlist %}
+
+                    <tr>
+                        <th scope="col">{{ forloop.counter }}</th>
+                        <th scope="col">{{ p.first_name }} {{ p.last_name}}</th>
+                        <th scope="col"> {{ p.age }}</th>
+                        <th scope="col"> {{ p.gender }}</th>
+                        <th scope="col"> {{ p.address}}</th>
+                        <th scope="col"> <a href="{% url 'dashboard' %}" class="tt">Check Dashboard</a></th>
+                    </tr>
+
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="log">
+                <a href="{% url 'user_logout' %}" class="underlineHove oo">Log out</a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+
+
+
+</html>

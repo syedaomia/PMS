@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/addpatient.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <section id=addpatient>
+        <div class="container">
+            <div class="head">
+                <p class="pm">PM<span>X</span></p>
+                <p class="home">Homepage</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="detail">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="box">
+                                <h5>First Name</h5>
+                                <input type="text" id="first_name" class="fadeIn second col-md-6" name="first_name"
+                                    placeholder="first name" required>
+                            </div>
+                            <div class="box">
+                                <h5>Last Name</h5>
+                                <input type="text" id="last_name" class="fadeIn second col-md-6" name="last_name"
+                                    placeholder="last_name" required>
+                            </div>
+                            <div class="box">
+                                <h5>Age</h5>
+                                <input type="text" id="age" class="fadeIn second col-md-6" name="age" placeholder="age" required>
+                            </div>
+                            <div class="box">
+                                <h5>Address</h5>
+                                <input type="text" id="address" class="fadeIn second" name="address"
+                                    placeholder="address" required>>
+                            </div>
+                            <div class="box">
+                                <h5>Gender</h5>
+
+                                <select class="form-control col-md-4" id="sel1" name="gender" type="text" required>
+                                    <option>F</option>
+                                    <option>M</option>
+                                </select>
+
+                            </div>
+                            <input type="submit" class="bbb" value="Register">
+
+
+                        </form>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image">
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

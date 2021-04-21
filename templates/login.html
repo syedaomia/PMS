@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/Login.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <section id=login>
+        <div class="container">
+            <div class="head">
+                <p>PM<span>X</span></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image">
+                        <img id="doctpr" src="{% static 'image/doctpr.png' %}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detail">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="box">
+                                <h4>Username</h4>
+                                <input type="text" id="username" class="fadeIn second" name="username"
+                                    placeholder="username">
+                            </div>
+
+                            <div class="box aaa">
+                                <h4>Password</h4>
+                                <input type="password" id="password" class="fadeIn third" name="password"
+                                    placeholder="password">
+                            </div>
+
+                            <input type="submit" class="fadeIn fourth bbb" value="Log In">
+                        </form>
+
+                        <!-- Remind Passowrd -->
+                        <div id="formFooter">
+                            <h5 class="ccc"> Not a Member? <a class="underlineHover" href="#">Register</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Learn_more_about_PMX">
+                <span>Learn more about PM</span><span style="color:rgba(80,204,223,1);">X</span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

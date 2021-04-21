@@ -1,0 +1,137 @@
+.clr {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/*=================================
+          patientlist css start
+===================================*/
+
+#list .container .head {
+    position: relative;
+}
+
+
+
+#list .container .head .pm {
+    color: rgba(155, 155, 155, 1);
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+
+
+    border-bottom: 2px solid rgba(80, 204, 223, 1);
+
+}
+
+#list .container .head span {
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+    color: rgba(80, 204, 223, 1);
+
+}
+
+#list .container .head .home {
+
+
+    right: 0;
+    top: 70px;
+    position: absolute;
+    overflow: visible;
+    width: 181px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#list .container .patlist p {
+
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#list .container .table-bordered .col a{
+    font-family: Montserrat !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(155, 155, 155, 1) !important;
+}
+
+
+
+
+
+#list .container .log{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 91%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(155,155,155,1);
+
+}
+
+#list .container .log a{
+    color: rgba(155,155,155,1);
+}

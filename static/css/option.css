@@ -1,0 +1,212 @@
+.clr {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/*=================================
+          option css start
+===================================*/
+
+#option .container .head {
+    position: relative;
+}
+
+
+
+#option .container .head .pm {
+    color: rgba(155, 155, 155, 1);
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+
+
+    border-bottom: 2px solid rgba(80, 204, 223, 1);
+
+}
+
+#option .container .head span {
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+    color: rgba(80, 204, 223, 1);
+
+}
+
+#option .container .head .home {
+
+
+    right: 0;
+    top: 70px;
+    position: absolute;
+    overflow: visible;
+    width: 181px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#option .container .middle {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#option .container .middle .profile {
+    width: 30%;
+
+
+}
+
+#option .container .middle .name {
+    width: 60%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#option .container .middle .name .dr {
+    display: inline-block;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#option .container .bottom {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+
+#option .container .bottom .group1 {
+    display: inline-block;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+#option .container .bottom .group1 .btn {
+    background-color: rgba(80, 204, 223, 1);
+    padding: 20px 40px;
+    border: 1px solid rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    transition: .4s;
+
+}
+
+
+#option .container .bottom .group1 .btn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color:rgba(155, 155, 155, 1);
+}
+
+#option .container .bottom .group1 .second {
+    margin-left: 30px;
+}
+
+#option .container .bottom .group2{
+    display: inline-block;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+#option .container .bottom .group2 .btn {
+    background-color: rgba(80, 204, 223, 1);
+    padding: 20px 40px;
+    border: 1px solid rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    transition: .4s;
+
+}
+
+
+#option .container .bottom .group2 .btn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color:rgba(155, 155, 155, 1);
+}
+
+#option .container .out{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 91%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(155,155,155,1);
+
+}
+
+#option .container .out a{
+    color: rgba(155,155,155,1);
+}
+
+
