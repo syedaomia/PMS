@@ -1,0 +1,418 @@
+.clr {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+/*====================================
+          dashboard css start
+======================================*/
+
+#dashboard .container .head {
+    position: relative;
+}
+
+
+
+#dashboard .container .head .pm {
+    color: rgba(155, 155, 155, 1);
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+
+
+    border-bottom: 2px solid rgba(80, 204, 223, 1);
+
+}
+
+#dashboard .container .head span {
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+    color: rgba(80, 204, 223, 1);
+
+}
+
+#dashboard .container .head .home {
+
+
+    right: 50px;
+    top: 70px;
+    position: absolute;
+    overflow: visible;
+    width: 181px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(155, 155, 155, 1);
+}
+
+
+#dashboard .container .top {
+    display: flex;
+}
+
+#dashboard .container .top .image {
+
+    width: 15%;
+    height: 100px;
+
+}
+
+#dashboard .container .top .image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#dashboard .container .top .name {
+
+    width: 25%;
+
+
+    display: flex;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(138, 138, 138, 1) !important;
+    margin-left: 1.5%;
+
+}
+
+
+#dashboard .container .top .name span {
+    font-weight: bold;
+    margin-right: 2%;
+
+}
+
+#dashboard .container .top .ref {
+
+    width: 40% !important;
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+}
+
+#dashboard .container .top .ref .btn {
+
+    background-color: rgba(80, 204, 223, 1);
+    padding: 10px 60px;
+    border: 1px solid rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    transition: .4s;
+    margin-left: auto;
+
+}
+
+
+#dashboard .container .top .ref .btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .box {
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+
+    border: 2px solid rgba(155, 155, 155, 1);
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#dashboard .container .box h4 {
+    margin: 7px 0;
+
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .box .graph {
+
+    background-color: yellow;
+    height: 200px;
+}
+
+#dashboard .container .box .graph img{
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#dashboard .container .box .two {
+
+    display: flex;
+    margin-top: 13px;
+}
+
+#dashboard .container .box .two .spo2 {
+
+    width: 50%;
+}
+
+#dashboard .container .box .two .spo2 p {
+
+
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .box .two .spo2 .val {
+
+    font-weight: bold;
+    margin-left: 40%;
+    border: 2px solid rgba(155, 155, 155, 1);
+    padding: 7px 44px;
+
+}
+
+
+#dashboard .container .box .two .temp {
+
+    width: 50%;
+}
+
+#dashboard .container .box .two .temp p {
+
+
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .box .two .temp .val {
+
+    font-weight: bold;
+    margin-left: 40%;
+    border: 2px solid rgba(155, 155, 155, 1);
+    padding: 7px 54px;
+}
+
+
+
+#dashboard .container .box .three {
+    display: flex;
+    margin-top: 35px;
+}
+
+#dashboard .container .box .three .spo2 {
+
+    width: 50%;
+}
+
+
+
+#dashboard .container .box .three .spo2 p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .box .three .spo2 p .rr {
+
+    font-weight: bold;
+    margin-left: 28%;
+    border: 2px solid rgba(155, 155, 155, 1);
+    padding: 7px 31px;
+
+}
+
+
+
+#dashboard .container .box .three .temp {
+
+    width: 50%;
+}
+
+
+
+#dashboard .container .box .three .temp p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .box .three .temp p .rr {
+    font-weight: bold;
+    margin-left: 20%;
+    border: 2px solid rgba(155, 155, 155, 1);
+    padding: 7px 28px;
+
+}
+
+
+
+#dashboard .container .row .right {
+    margin-left: 19%;
+    margin-top: 7%;
+
+ 
+}
+
+
+#dashboard .container .row .right h3 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+
+    color: rgba(155, 155, 155, 1);
+}
+
+#dashboard .container .row .right .btn {
+
+    background-color: rgba(80, 204, 223, 1);
+    padding: 10px 60px;
+    border: 1px solid rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    transition: .4s;
+    margin-left: auto;
+
+    transform: translateX(-50%);
+    margin-left: 50%;
+
+
+
+}
+
+
+#dashboard .container .row .right .btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(155, 155, 155, 1);
+}
+
+
+#dashboard .container .row .right .arry {
+    padding-top: 10px;
+    padding-bottom: 60%;
+    border: 2px solid rgba(155, 155, 155, 1);
+    margin-top: 20px;
+
+
+}
+
+#dashboard .container .row .right .arry h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+
+    color: rgba(155, 155, 155, 1);
+   
+    margin-left: 57px;
+
+
+}
+
+
+#dashboard .container .row .right .arry p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+
+    color: rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(155, 155, 155, 1);
+
+
+
+    margin-left: 30px;
+
+}

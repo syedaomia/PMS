@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/history.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <section id=history>
+        <div class="container">
+            <div class="head">
+                <p class="pm">PM<span>X</span></p>
+                <p class="home">Patient Information</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="left">
+                        <div class="card" style="width: 20rem;height: 20rem;">
+                            <img class="card-img-top" src="{{ pp.image.url }}" alt="Card image cap" width="500"
+                                height="600">
+                            <div class="card-body">
+                                <p class="card-text name"><span>Mr</span> {{ pp.first_name }} {{pp.last_name}}</p>
+                                <p class="card-text">Age: {{ pp.age }}</p>
+                                <p class="card-text">Gender: {{ pp.gender }}</p>
+                                <p class="card-text">Address: {{ pp.address }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>My Reports</h3>
+                    <div class="right">
+                        <div class="heading">
+                            <p class="lat">Latest</p>
+                            <p class="arc">Archived</p>
+                        </div>
+                        <div class="des">
+                            <ul>
+                                <li>Blood test lab report - 22/03/2021</li>
+                                <li>Urine test lab report - 25/03/2021 </li>
+                                <li>CT scan report - 23/03/2020</li>
+                                <li>Diabetes lab report - 22/03/2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <p class="card-text"><span>History:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="button">
+                <a href="{% url 'dashboard' pp.id %}"><button type="submit" class="btn">Show Vitals</button></a>
+                <a href="#"><button type="submit" class="btn second">Detect Pneumonia</button></a>
+            </div>
+            <div class="log">
+                <a href="{% url 'user_logout' %}" class="underlineHove oo">Log out</a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

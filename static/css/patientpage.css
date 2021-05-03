@@ -1,0 +1,151 @@
+.clr {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/*=================================
+          patpage css start
+===================================*/
+
+#patpage .container .row{
+  
+    height: 300px;
+}
+
+
+#patpage .container .head p {
+
+   
+  
+
+    color: rgba(155, 155, 155, 1);
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+
+
+
+   
+   
+    
+
+}
+
+#patpage .container .head .pp{
+    transform: translateX(-50%);
+    margin-left: 50%;
+    font-size: 75px !important;
+
+}
+
+
+
+#patpage .container .head span {
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+
+    color: rgba(80, 204, 223, 1);
+
+}
+
+#patpage .container .image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#patpage .container .row .right{
+    background-color:violet;
+    height: 709px;
+    padding-top: 1%;
+
+    background: url(../image/back.png) no-repeat center;
+    background-size: cover;
+}
+
+
+
+#patpage .container .row .right .button{
+    transform: translateX(-50%) !important;
+    margin:41% 50%;
+   
+}
+
+
+#patpage .container .row .right .button .btn {
+    background-color:  rgba(255, 255, 255, 1);
+    padding: 20px 40px;
+    border: 1px solid rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(80, 204, 223, 1);
+    transition: .4s;
+    transform: translateX(-50%);
+    margin: 0 -50%;
+    border-radius: 5px
+
+  
+   
+
+}
+
+
+#patpage .container .row .right .button .sec{
+    margin-top: 113px;
+}
+
+#patpage .container .row .right .button .btn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color:rgba(155, 155, 155, 1);
+}

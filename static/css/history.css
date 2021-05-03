@@ -1,0 +1,275 @@
+.clr {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+/*====================================
+          dashboard css start
+======================================*/
+
+#history .container .head {
+    position: relative;
+}
+
+
+
+#history .container .head .pm {
+    color: rgba(155, 155, 155, 1);
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+
+
+    border-bottom: 2px solid rgba(80, 204, 223, 1);
+
+}
+
+#history .container .head span {
+
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+
+    color: rgba(80, 204, 223, 1);
+
+}
+
+#history .container .head .home {
+
+
+    right: 50px;
+    top: 70px;
+    position: absolute;
+    overflow: visible;
+    width: 181px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(155, 155, 155, 1);
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 100%;
+}
+
+
+
+#history .container .row .left .card-text {
+
+    width: 466px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(138, 138, 138, 1) !important;
+    margin-bottom: 1rem;
+
+}
+
+#history .container .row .left .card-text span {
+    font-weight: bold;
+}
+
+
+#history .container .row .left {
+    position: relative;
+}
+
+#history .container .row .left .name {
+
+    position: absolute;
+    left: 105%;
+    top: 23%;
+    font-size: 27px;
+
+}
+
+
+#history .container .row .left .card-body {
+    line-height: 1 !important;
+}
+
+#history .container .row h3 {
+    margin-top: 66px;
+    margin-bottom: 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+  
+    color: rgba(138, 138, 138, 1) !important;
+}
+
+
+#history .container .row .right {
+
+    padding-left: 13px;
+    padding-right: 13px;
+    border: 2px solid rgba(155, 155, 155, 1);
+    padding-bottom: 50px;
+
+}
+
+#history .container .row .right .heading {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(138, 138, 138, 1) !important;
+
+}
+
+#history .container .row .right .heading p {
+    padding: 2px 10px;
+    border: 2px solid rgba(80, 204, 223, 1) !important;
+}
+
+
+
+#history .container .row .right .heading .arc {
+    margin-left: auto;
+
+}
+
+
+
+#history .container .row .right .des ul li {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(138, 138, 138, 1) !important;
+    line-height: 2.5 !important;
+
+}
+
+
+
+#history .container .history {
+    margin-top: -80px;
+    margin-bottom: 55px;
+}
+
+#history .container .history .card-text {
+
+    width: 466px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(138, 138, 138, 1) !important;
+    margin-bottom: 1rem;
+
+}
+
+#history .container .history .card-text span {
+    font-weight: bold;
+}
+
+
+
+
+
+#history .container .button .btn {
+
+    background-color: rgba(80, 204, 223, 1);
+    padding: 10px 20px;
+    border: 1px solid rgba(155, 155, 155, 1);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    transition: .4s;
+
+}
+
+
+#history .container .button .btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(155, 155, 155, 1);
+}
+
+#history .container .button .second {
+    margin-left: 30px;
+}
+
+#history .container .log {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 91%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(155, 155, 155, 1);
+
+}
+
+#history .container .log a {
+    color: rgba(155, 155, 155, 1);
+}

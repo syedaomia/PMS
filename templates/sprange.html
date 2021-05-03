@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/sprange.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <section id=sprange>
+        <div class="container">
+            <div class="head">
+                <p class="pm">PM<span>X</span></p>
+                <p class="home">Patient Information</p>
+            </div>
+
+
+            <div class="top">
+                <div class="image">
+                    <img src="{{ tt.image.url }}" alt="">
+                </div>
+                <div class="name"><span>Mr</span>{{ tt.first_name }} {{ tt.last_name }}</div>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="fir">
+                        <div class="bbb">
+                            <h5>Start Date</h5>
+                            <input type="date" id="start_date" class="fadeIn second col-md-6" name="start_date"
+                                placeholder="" required>
+                        </div>
+                        <div class="bbb">
+                            <h5>Start Hour</h5>
+                            <input type="text" id="start_hour" class="fadeIn second col-md-6" name="start_hour"
+                                placeholder="" required>
+                        </div>
+                        <div class="bbb">
+                            <h5>Start Min</h5>
+                            <input type="text" id="start_min" class="fadeIn second col-md-6" name="start_min"
+                                placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="fir firtwo">
+                        <div class="bbb">
+                            <h5>End Date</h5>
+                            <input type="date" id="start_date" class="fadeIn second col-md-6" name="start_date"
+                                placeholder="" required>
+                        </div>
+                        <div class="bbb">
+                            <h5>End Hour</h5>
+                            <input type="text" id="start_hour" class="fadeIn second col-md-6" name="start_hour"
+                                placeholder="" required>
+                        </div>
+                        <div class="bbb">
+                            <h5>End Min</h5>
+                            <input type="text" id="start_min" class="fadeIn second col-md-6" name="start_min"
+                                placeholder="" required>
+                        </div>
+                    </div>
+                    <input type="submit" class="ccc" value="Detect">
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <div class="rec">
+                        <div class="box">
+                            <h4>ECG</h4>
+                            <div class="graph">
+                               
+                            </div>
+                        </div>
+                        <div class="box two">
+                            <h4>SpO2</h4>
+                            <div class="graph">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+
+        </div>
+    </section>
+</body>
+
+</html>
