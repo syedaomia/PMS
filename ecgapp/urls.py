@@ -4,6 +4,9 @@ from .views import *
 
 urlpatterns = [
    path('', user_login, name='user_login'),
+   path('docreg', docreg, name='docreg'),
+   path('forpass', forpass, name='forpass'),
+   path('forpassotp', forpassotp, name='forpassotp'),
    path('option', option, name='option'),
    path('patient-list', patient_list, name='patient_list'),
    path('add-patient', add_patient, name='add_patient'),

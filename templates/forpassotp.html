@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 m-auto">
+            {% if msg %}
+                 {{ msg }}
+            {% endif %}
+
+            <form method="POST" action="{% url 'forpassotp' %}">
+                {% csrf_token %}
+                <div class="form-group mx-sm-3 mb-2">
+                  <input type="text" name="otp" class="form-control"  placeholder="Enter Your OTP...">
+                  <input type="text" name="username" class="form-control"  placeholder="Username...">
+                  <input type="password" name="np" class="form-control"  placeholder="New Password...">
+                  <button type="submit" class="btn btn-primary mt-2">Send Email</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
